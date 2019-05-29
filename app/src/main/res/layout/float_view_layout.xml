@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--Root View-->
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Collapsed State -->
+
+        <LinearLayout
+            android:id="@+id/collapsed-view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!-- Bird Image -->
+            <ImageView
+                android:id="@+id/collapsed-bird-imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bird" />
+
+            <!-- Close Button -->
+            <ImageView
+                android:id="@+id/collapsed-close-button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/close_button" />
+        </LinearLayout>
+
+        <!-- Expanded State -->
+
+        <LinearLayout
+            android:id="@+id/expanded_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="#ff0080"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <!-- Lion Image -->
+            <ImageView
+                android:id="@+id/lionImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lion" />
+
+            <!-- Previous Animal Button -->
+            <ImageView
+                android:id="@+id/btnPrevious"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/previous_button" />
+
+            <!-- Leopard Video Image -->
+            <ImageView
+                android:id="@+id/leopardImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/leopard" />
+
+            <!-- Next Animal Button -->
+            <ImageView
+                android:id="@+id/btnNext"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/next_button"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <!-- Close Button for Expanded State -->
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/close_button_expanded"
+                    android:src="@drawable/close_button"/>
+
+                <!-- Open Button for the Expanded State -->
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/open_button"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/open_android"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

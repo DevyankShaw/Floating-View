@@ -1,5 +1,5 @@
 # FloatingView
-Floating View App is an app in which a small section of the view or layout floats over other applications like Swiggy delivery app.
+In this app user can drag a floating image to anywhere on the screen. Just like in the Swiggy App, when the users orders a food then to see the location of the delivery executive a floating view of the map floats on the screen which can be dragged.
 
 ## Components Used
 
